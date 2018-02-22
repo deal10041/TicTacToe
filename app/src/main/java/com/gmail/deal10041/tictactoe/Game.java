@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 public class Game implements Serializable {
 
-    // Variables of class
+    // variables of class
     final public int BOARD_SIZE = 3;
     private Tile[][] board;
     private Boolean playerOneTurn;
