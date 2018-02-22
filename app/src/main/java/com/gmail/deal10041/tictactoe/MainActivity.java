@@ -82,18 +82,6 @@ public class MainActivity extends AppCompatActivity {
                 // show toast
                 Toast.makeText(context, text, duration).show();
         }
-
-        game.updateGameState();
-        // check if there is a win
-        if(game.getGameState() == GameState.DRAW) {
-            postMessage("It's a draw!");
-        }
-        else if(game.getGameState() == GameState.PLAYER_ONE) {
-            postMessage("Player One wins!");
-        }
-        else if(game.getGameState() == GameState.PLAYER_TWO) {
-            postMessage("Player Two wins!");
-        }
     }
 
     public void resetClicked(View view) {
@@ -130,4 +118,5 @@ public class MainActivity extends AppCompatActivity {
         // show toast
         Toast.makeText(context, text, duration).show();
     }
+
 }

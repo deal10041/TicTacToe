@@ -1,18 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:layout_centerInParent="false"
+    android:orientation="vertical"
     tools:context="com.gmail.deal10041.tictactoe.MainActivity">
 
-    <TextView
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/tile0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="0" />
+
+        <Button
+            android:id="@+id/tile1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="1" />
+
+        <Button
+            android:id="@+id/tile2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="2" />
+
+        <Button
+            android:id="@+id/tile3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="3" />
+
+        <Button
+            android:id="@+id/tile4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="4" />
+
+        <Button
+            android:id="@+id/tile5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="5" />
+
+        <Button
+            android:id="@+id/tile6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="6" />
+
+        <Button
+            android:id="@+id/tile7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="7" />
+
+        <Button
+            android:id="@+id/tile8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:onClick="@string/tileClicked"
+            android:tag="8" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:onClick="@string/resetClicked"
+        android:text="Reset" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
